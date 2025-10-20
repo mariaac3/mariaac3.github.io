@@ -1,47 +1,50 @@
 /*******************************************************************************
- * Themes
+ * Themes — Pastel Purple (Light) & Deep Amethyst (Dark)
  ******************************************************************************/
 
 @use "sass:color";
 
+/* ===========================
+   LIGHT THEME (pastel purple)
+   =========================== */
+
 :root {
   color-scheme: light;
-  --global-bg-color: #{$white-color};
-  --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #004D99; /* --global-theme-color: #{$purple-color}; */
-  --global-hover-color: #004D99;
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
-  --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.5);
-  --global-card-bg-color: #{$white-color};
-  --global-highlight-color: #{$red-color-dark};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($black-color, "red", $space: rgb)},
-    #{color.channel($black-color, "green", $space: rgb)},
-    #{color.channel($black-color, "blue", $space: rgb)},
-    0.4
-  );
-  --global-back-to-top-text-color: #{$white-color};
-  --global-newsletter-bg-color: #{$white-color};
-  --global-newsletter-text-color: #{$black-color};
 
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #e2f5ec;
+  --global-bg-color: #E9D4FF; /* soft lilac */
+  --global-code-bg-color: #F7EEFF;
+  --global-text-color: #2F1C3A; /* deep aubergine */
+  --global-text-color-light: #6A4A80; /* muted plum */
+  --global-theme-color: #9B74B3; /* medium amethyst */
+  --global-hover-color: #C9A5E7; /* lavender mist */
+  --global-hover-text-color: #ffffff;
+
+  --global-footer-bg-color: #C9A5E7;
+  --global-footer-text-color: #2F1C3A;
+  --global-footer-link-color: #ffffff;
+  --global-distill-app-color: #9B74B3;
+  --global-divider-color: rgba(47, 28, 58, 0.3);
+  --global-card-bg-color: #F7EEFF;
+  --global-highlight-color: #B374B3;
+  --global-back-to-top-bg-color: rgba(155, 116, 179, 0.3);
+  --global-back-to-top-text-color: #ffffff;
+  --global-newsletter-bg-color: #E9D4FF;
+  --global-newsletter-text-color: #2F1C3A;
+
+  --global-tip-block: #A7D8C9;
+  --global-tip-block-bg: #E9F7F1;
   --global-tip-block-text: #215d42;
   --global-tip-block-title: #359469;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #fff8d8;
-  --global-warning-block-text: #6b5900;
-  --global-warning-block-title: #b29400;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #ffe0e0;
+
+  --global-warning-block: #E7C000;
+  --global-warning-block-bg: #FFF8D8;
+  --global-warning-block-text: #6B5900;
+  --global-warning-block-title: #B29400;
+
+  --global-danger-block: #C00;
+  --global-danger-block-bg: #FFE0E0;
   --global-danger-block-text: #600;
-  --global-danger-block-title: #c00;
+  --global-danger-block-title: #C00;
 
   #light-toggle-system {
     padding-left: 10px;
@@ -49,10 +52,7 @@
     display: block;
   }
 
-  #light-toggle-dark {
-    display: none;
-  }
-
+  #light-toggle-dark,
   #light-toggle-light {
     display: none;
   }
@@ -76,43 +76,46 @@
   }
 }
 
+/* ===========================
+   DARK THEME (deep amethyst)
+   =========================== */
+
 html[data-theme="dark"] {
   color-scheme: dark;
-  --global-bg-color: #{$grey-color-dark};
-  --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
-  --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($white-color, "red", $space: rgb)},
-    #{color.channel($white-color, "green", $space: rgb)},
-    #{color.channel($white-color, "blue", $space: rgb)},
-    0.5
-  );
-  --global-back-to-top-text-color: #{$black-color};
-  --global-newsletter-bg-color: #{$grey-color-light};
-  --global-newsletter-text-color: #{$grey-color-dark};
 
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #e2f5ec;
-  --global-tip-block-text: #215d42;
-  --global-tip-block-title: #359469;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #fff8d8;
-  --global-warning-block-text: #6b5900;
-  --global-warning-block-title: #b29400;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #ffe0e0;
-  --global-danger-block-text: #600;
-  --global-danger-block-title: #c00;
+  --global-bg-color: #2F1C3A; /* deep aubergine */
+  --global-code-bg-color: #3E264D;
+  --global-text-color: #E9D4FF; /* lilac text */
+  --global-text-color-light: #C9A5E7;
+  --global-theme-color: #9B74B3;
+  --global-hover-color: #C9A5E7;
+  --global-hover-text-color: #2F1C3A;
+
+  --global-footer-bg-color: #6A4A80;
+  --global-footer-text-color: #E9D4FF;
+  --global-footer-link-color: #ffffff;
+  --global-distill-app-color: #C9A5E7;
+  --global-divider-color: #6A4A80;
+  --global-card-bg-color: #3E264D;
+  --global-back-to-top-bg-color: rgba(233, 212, 255, 0.3);
+  --global-back-to-top-text-color: #ffffff;
+  --global-newsletter-bg-color: #3E264D;
+  --global-newsletter-text-color: #E9D4FF;
+
+  --global-tip-block: #A7D8C9;
+  --global-tip-block-bg: #2B3C3B;
+  --global-tip-block-text: #D0F0E1;
+  --global-tip-block-title: #A7D8C9;
+
+  --global-warning-block: #E7C000;
+  --global-warning-block-bg: #4A3C00;
+  --global-warning-block-text: #FFF1A3;
+  --global-warning-block-title: #E7C000;
+
+  --global-danger-block: #FF6F91;
+  --global-danger-block-bg: #3A1C1C;
+  --global-danger-block-text: #FFE0E0;
+  --global-danger-block-title: #FF6F91;
 
   .only-light {
     display: none;
@@ -122,6 +125,10 @@ html[data-theme="dark"] {
     display: block;
   }
 }
+
+/* ===========================
+   Theme Switcher Visibility
+   =========================== */
 
 html[data-theme-setting="dark"] {
   #light-toggle-system {
