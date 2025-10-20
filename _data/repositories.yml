@@ -1,10 +1,7 @@
 github_users:
-  - bastiencarreres
+  - mariaac3
 
 repo_description_lines_max: 2
 
 github_repos:
-  - bastiencarreres/snsim
-  - LSSTDESC/OpSimSummaryV2
-  - corentinravoux/flip
-  - bastiencarreres/snanapytools
+
