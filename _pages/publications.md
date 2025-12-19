@@ -2,7 +2,7 @@
 layout: pub_page
 permalink: /publications/
 title: Publications
-publist_pdf: pub_list.pdf
+#publist_pdf: pub_list.pdf
 description:
 nav: true
 nav_order: 1
@@ -17,21 +17,21 @@ nav_order: 1
 #### I have a total of **{% bibliography_count -f {{ site.scholar.bibliography }}%}** publications: **{% bibliography_count -f {{ site.scholar.bibliography }} -q @*[keywords=FirstAuth] %}** as first-author, **{% bibliography_count -f {{ site.scholar.bibliography }} -q @*[keywords=SignContrib] %}** in which I did a significant contribution and **{% bibliography_count -f {{ site.scholar.bibliography }} -q @*[keywords=Other] %}** as co-author.
 
 <div class="publications">
-    <h2>First author</h2>
+    <h2>First Author</h2>
     {% bibliography -f {{ site.scholar.bibliography }} -q @*[keywords=FirstAuth] %}
 
     <br>
     <hr style="height:2px;border-width:0;color:black;background-color:gray">
     <br>
 
-    <h2>Significant contribution</h2>
+    <h2>Significant Contribution</h2>
     {% bibliography -f {{ site.scholar.bibliography }} -q @*[keywords=SignContrib] %}
 
     <br>
     <hr style="height:2px;border-width:0;color:black;background-color:gray">
     <br>
 
-    <h2>Co-author</h2>
+    <h2>Selected Co-Author</h2>
     {% bibliography -f {{ site.scholar.bibliography }} -q @*[keywords=Other] %}
 
 </div>

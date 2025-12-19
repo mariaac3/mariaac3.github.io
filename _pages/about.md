@@ -23,8 +23,8 @@ After obtaining a bachelor's degree in Physics at [The University of Pennsylvani
 {: style="text-align: justify"}
 
 My research focuses on understanding the acceleration of the expansion of the Universe and the nature of dark energy.
-In particular, I use type Ia supernovae in the nearby universe to measure distances and infer the peculiar velocity field. This field is linked to the growth of structures and allows to test the standard model of cosmology and general relativity.
+In particular, I work with low-redshift Type Ia supernovae, developing and refining nearby samples used for cosmology. By improving the quality and calibration of the local supernova dataset, my work strengthens distance measurements and anchors the cosmic distance ladder.
 {: style="text-align: justify"}
 
-I am involved in [Roman Supernova Infastructure Team](https://www.romansnpit.com/) and with the Dark Energy Bedrock All-Sky Survey ([DEBASS](https://www.mso.anu.edu.au/debass/)).
+I am involved in [Roman Supernova Project Infastructure Team](https://www.romansnpit.com/) and with the Dark Energy Bedrock All-Sky Survey ([DEBASS](https://www.mso.anu.edu.au/debass/)).
 {: style="text-align: justify"}
