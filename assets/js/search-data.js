@@ -23,26 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "nav-repositories",
-          title: "Repositories",
-          description: "Github repositories I am contributing in.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
         },{id: "nav-cv",
           title: "CV",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
-          },
-        },{id: "nav-thesis",
-          title: "Thesis",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/thesis/";
           },
         },{
         id: 'social-email',
@@ -57,6 +43,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://orcid.org/0000-0002-5389-7961", "_blank");
+        },
+      },{
+        id: 'social-inspire',
+        title: 'Inspire HEP',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://inspirehep.net/authors/2649183", "_blank");
         },
       },{
         id: 'social-scholar',
