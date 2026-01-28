@@ -24,11 +24,12 @@ module Jekyll
 
     def render(context)
       bibcode = context[@bibcode.strip]
-      token = context[@token.strip]
+      # Access site config properly for nested variables like site.nasa_ads_token
+      token = context.registers[:site].config["nasa_ads_token"]
 
       base_url = "https://api.adsabs.harvard.edu/v1/search/query"
       query = URI.encode_www_form({
-        q: "bibcode:#{bibcode}",
+        q: "bibcode:\"#{bibcode}\"",
         fl: "citation_count"
         })
         
@@ -57,7 +58,7 @@ module Jekyll
         citation_count = "N/A"
 
         # Print the error message including the exception class and message
-        puts "Error fetching citation count for #{recid}: #{e.class} - #{e.message}"
+        puts "Error fetching citation count for #{bibcode}: #{e.class} - #{e.message}"
       end
 
       NasaADSCitationsTag::Citations[bibcode] = citation_count

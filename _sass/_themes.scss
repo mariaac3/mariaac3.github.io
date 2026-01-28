@@ -15,8 +15,8 @@
   --global-code-bg-color: #F7EEFF;
   --global-text-color: #2F1C3A; /* deep aubergine */
   --global-text-color-light: #6A4A80; /* muted plum */
-  --global-theme-color: #9B74B3; /* medium amethyst */
-  --global-hover-color: #C9A5E7; /* lavender mist */
+  --global-theme-color: #6B4C9A; /* deep violet - color-blind friendly */
+  --global-hover-color: #8B6CBB; /* lighter violet for hover */
   --global-hover-text-color: #ffffff;
 
   --global-footer-bg-color: #C9A5E7;
@@ -87,7 +87,7 @@ html[data-theme="dark"] {
   --global-code-bg-color: #3E264D;
   --global-text-color: #E9D4FF; /* lilac text */
   --global-text-color-light: #C9A5E7;
-  --global-theme-color: #9B74B3;
+  --global-theme-color: #A88BCC; /* lighter deep violet for dark mode - color-blind friendly */
   --global-hover-color: #C9A5E7;
   --global-hover-text-color: #2F1C3A;
 
