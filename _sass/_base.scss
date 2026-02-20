@@ -4,6 +4,25 @@
 
 // Typography
 
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1,
+h2 {
+  letter-spacing: -0.02em;
+}
+
 p,
 h1,
 h2,
@@ -1301,11 +1320,12 @@ ninja-keys::part(ninja-input-wrapper) {
 
 // popover is used for annotation in bib.liquid
 .popover {
-  background-color: var(--global-bg-color);
+  background-color: var(--global-card-bg-color);
   border-color: var(--global-divider-color);
 
   .popover-header {
     color: var(--global-text-color); // Header text color
+    background-color: var(--global-card-bg-color);
     border-bottom: 1px solid var(--global-divider-color);
   }
 
@@ -1317,7 +1337,7 @@ ninja-keys::part(ninja-input-wrapper) {
 .bs-popover-top {
   // arrow fill color
   .arrow::after {
-    border-top-color: var(--global-bg-color);
+    border-top-color: var(--global-card-bg-color);
   }
 
   // arrow border color
@@ -1329,7 +1349,7 @@ ninja-keys::part(ninja-input-wrapper) {
 .bs-popover-bottom {
   // arrow fill color
   .arrow::after {
-    border-bottom-color: var(--global-bg-color);
+    border-bottom-color: var(--global-card-bg-color);
   }
 
   // arrow border color

@@ -5,7 +5,7 @@ title: Publications
 #publist_pdf: pub_list.pdf
 description:
 nav: true
-nav_order: 1
+nav_order: 4
 ---
 
 <!-- _pages/publications.md -->

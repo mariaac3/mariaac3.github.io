@@ -7,7 +7,7 @@ subtitle: PhD Candidate at Duke University
 profile:
   align: left
   image: prof_pic.webp
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>Physics Building</p>
     <br>
